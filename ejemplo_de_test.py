@@ -2,6 +2,8 @@
 #             Decimal to roman Converter               #   
 ########################################################
 
+# Buscamos una mejor forma de hacerlo
+
 #################
 #   Imports     #
 #################
