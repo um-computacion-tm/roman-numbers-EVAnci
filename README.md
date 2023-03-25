@@ -10,7 +10,7 @@ Then the other file, test_main, contains some testing to prove that the
 function works correctly.
 
 The "main" file won't work as a single file cause its just a function. If
-you want to execute it just uncomment line 57 (last). Also if you want some
+you want to execute it just uncomment last line. Also if you want some
 vervose to understand how it works, uncoment the print() lines.
 
 For now, it don't work with numbers bigger than 3999. It throws numbers
