@@ -32,9 +32,16 @@ def decimal_to_roman(number):
                '900',
                '1000'
                ]
-    
-    for i in range(len(decimal)):
 
+    # How it works?
+    # if input number is equal to a number in the list, it's assigned
+    # if not, it divide the number in 2 parts...
+    # the first part, that consist in the bigger part of the number
+    # example: 48 -> first part 40, second part 8
+    #  the 8 then -> first part 5, second part 3, and so
+    # At the end recursivity join all number parts togeher
+
+    for i in range(len(decimal)):
         if number == int(decimal[i]):
             # print(f'number in: {number}, decimal in: {decimal[i]}')
             roman = de2ro[decimal[i]]
@@ -44,6 +51,10 @@ def decimal_to_roman(number):
             # print(f'number in: {number}, decimal in: {decimal[i]}')
             roman = de2ro[decimal[i-1]]
             number = number - int(decimal[i-1])
+            break
+        elif number > int(decimal[-1]):
+            roman = de2ro[decimal[-1]]
+            number = number - int(decimal[-1])
             break
     # print(f'number return: {number}, roman return: {roman}')
     if number == 0:
