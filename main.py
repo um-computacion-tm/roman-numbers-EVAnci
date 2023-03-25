@@ -36,20 +36,22 @@ def decimal_to_roman(number):
     for i in range(len(decimal)):
 
         if number == int(decimal[i]):
-            print(f'number in: {number}, decimal in: {decimal[i]}')
+            # print(f'number in: {number}, decimal in: {decimal[i]}')
             roman = de2ro[decimal[i]]
             number = 0
             break
         elif number < int(decimal[i]):
-            print(f'number in: {number}, decimal in: {decimal[i]}')
+            # print(f'number in: {number}, decimal in: {decimal[i]}')
             roman = de2ro[decimal[i-1]]
             number = number - int(decimal[i-1])
             break
-    print(f'number return: {number}, roman return: {roman}')
+    # print(f'number return: {number}, roman return: {roman}')
     if number == 0:
+        # print('Number returned successfully')
         return roman
     else:
-        roman = roman + decimal_to_roman(number)
+        # print('Recursivity...')
+        result = roman + decimal_to_roman(number)
+    return result
 
-
-print(decimal_to_roman(3))
+# print(decimal_to_roman(int(input('Type a number: '))))

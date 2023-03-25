@@ -10,10 +10,80 @@ from main import decimal_to_roman
 #################
 
 class TestDecimalToRoman(unittest.TestCase):
-    def test_basicos(self):
-        # Define basic numbers
-        roman_numbers = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
-        decimal_numbers = [1,5,10,50,100,500,1000]
+    def test_numbers(self):
+        print('Testing some numbers...')
+        # Define numbers
+        roman_numbers = [
+            'I',
+            'IV',
+            'V',
+            'IX',
+            'X',
+            'XL',
+            'L',
+            'XC',
+            'C',
+            'CD',
+            'D',
+            'CM',
+            'M',
+            'III',
+            'VIII',
+            'XVIII',
+            'XIX',
+            'XXIV',
+            'XXXIII',
+            'XXXVII',
+            'XLIV',
+            'LVI',
+            'LXIII',
+            'LXXVII',
+            'LXXXIII',
+            'XCIX',
+            'CXXIV',
+            'CCCLXII',
+            'CDXV',
+            'DXII',
+            'DCLXXXII',
+            'DCCCXLIV',
+            'CMXCIX',
+        ]
+
+        decimal_numbers = [
+            1,
+            4,
+            5,
+            9,
+            10,
+            40,
+            50,
+            90,
+            100,
+            400,
+            500,
+            900,
+            1000,
+            3,
+            8,
+            18,
+            19,
+            24,
+            33,
+            37,
+            44,
+            56,
+            63,
+            77,
+            83,
+            99,
+            124,
+            362,
+            415,
+            512,
+            682,
+            844,
+            999,
+        ]
         # Test numbers in the list 
         for i in range(len(roman_numbers)):
             print(f'Test: in[{decimal_numbers[i]}] --> out[{roman_numbers[i]}]')
