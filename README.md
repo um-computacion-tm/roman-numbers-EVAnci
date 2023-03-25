@@ -2,10 +2,10 @@
 #             Decimal to Roman Converter               #   
 ########################################################
 
-Author: EVanci
+Author: Elio Valentino Anci (62197)
 
 There are two files, main.py and test_main.py, the "main" file contains
-the function to conver a Decimal Number to a Roman Number.
+the function to convert a Decimal Number to a Roman Number.
 Then the other file, test_main, contains some testing to prove that the 
 function works correctly.
 
