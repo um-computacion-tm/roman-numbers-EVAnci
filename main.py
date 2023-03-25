@@ -39,6 +39,8 @@ def decimal_to_roman(number):
     # the first part, that consist in the bigger part of the number
     # example: 48 -> first part 40, second part 8
     #  the 8 then -> first part 5, second part 3, and so
+    # if the number is bigger than the last number in the list, that 
+    # number will be selected (bigger in the list)
     # At the end recursivity join all number parts togeher
 
     for i in range(len(decimal)):
