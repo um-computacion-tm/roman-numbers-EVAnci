@@ -5,7 +5,7 @@ There are two functions, roman to decimal and decimal to roman. Each function co
 ## Instalation
 
 There is no need to install, just download and use it in other programs. 
-Also if you want to test you can run the test_main.py (each function has a individual test).
+Also if you want to test you can run the test_(name of the file).py (each function has a individual test).
 
 For running any test, you can follow the example:
 
@@ -23,7 +23,7 @@ git clone https://github.com/um-computacion-tm/roman-numbers-EVAnci
 
 The **decimal_to_roman(number)** function recives a integer number and returns the equivalent number in the roman numeration system.
 
-The **roman_to_decimal(roman)** function recives a string (its converted to uppercase) in case it isn't, and returns the equivalent in decimal numeration system.
+The **roman_to_decimal(roman)** function recives a string and it's converted to uppercase in case it isn't, and returns the equivalent in decimal numeration system.
 
 ## Usage
 
