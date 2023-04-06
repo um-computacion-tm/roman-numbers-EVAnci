@@ -32,7 +32,12 @@ Just import the function you need to your python program, or copy it into your p
 To import copy the following:
 
 ```python
-from 
+from dec2ro import decimal_to_roman
+```
+or
+
+```python
+from ro2dec import roman_to_decimal
 ```
 
 ## Known Issues
