@@ -37,7 +37,7 @@ from
 
 ## Known Issues
 
-For now, it don't work with numbers bigger than 3999, due to an ASCII limitation. Any ideas to replace the upper bar for representing the thousand (example: Five Thousand) is accepted.
+For now, it don't work with numbers bigger than 3999, due to an ASCII limitation. Any ideas to replace the upper bar for representing the thousand (example: Five Thousand = <span style="text-decoration: overline;">V</span>) is accepted.
 
 ## Contributors
 
