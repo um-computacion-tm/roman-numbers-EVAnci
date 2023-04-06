@@ -3,7 +3,7 @@
 #################
 
 import unittest
-from main import decimal_to_roman
+from dec2ro import decimal_to_roman
 
 #################
 #   Testing     #
