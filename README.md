@@ -1,17 +1,46 @@
-########################################################
-#             Decimal to Roman Converter               #   
-########################################################
+# Roman Numbers Converter
 
-Author: Elio Valentino Anci (62197)
+There are two functions, roman to decimal and decimal to roman. Each function converts one number to the other (specified by the name: one system to the other system)
 
-There are two files, main.py and test_main.py, the "main" file contains
-the function to convert a Decimal Number to a Roman Number.
-Then the other file, test_main, contains some testing to prove that the 
-function works correctly.
+## Instalation
 
-The "main" file won't work as a single file cause its just a function. If
-you want to execute it just uncomment last line. Also if you want some
-vervose to understand how it works, uncoment the print() lines.
+There is no need to install, just download and use it in other programs. 
+Also if you want to test you can run the test_main.py (each function has a individual test).
 
-For now, it don't work with numbers bigger than 3999. It throws numbers
-that don't exist
+For running any test, you can follow the example:
+
+```bash
+python3 ./example/directory/test_example.py
+```
+
+To download
+
+```bash
+git clone https://github.com/um-computacion-tm/roman-numbers-EVAnci
+```
+
+## How it works
+
+The **decimal_to_roman(number)** function recives a integer number and returns the equivalent number in the roman numeration system.
+
+The **roman_to_decimal(roman)** function recives a string (its converted to uppercase) in case it isn't, and returns the equivalent in decimal numeration system.
+
+## Usage
+
+Just import the function you need to your python program, or copy it into your program.
+
+To import copy the following:
+
+```python
+from 
+```
+
+## Known Issues
+
+For now, it don't work with numbers bigger than 3999, due to an ASCII limitation. Any ideas to replace the upper bar for representing the thousand (example: Five Thousand) is accepted.
+
+## Contributors
+
+Universidad de Mendoza
+
+Author: Anci V. Elio Valentino (62197)
