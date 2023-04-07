@@ -48,7 +48,11 @@ class TestDecimalToRoman(unittest.TestCase):
             'DCCCXLIV',
             'CMXCIX',
             'MDCCCLXXXVIII',
-            'MMMCDLXVII'
+            'MMMCDLXVII',
+            'MV̅DXXV',
+            'V̅DCLXXVIII',
+            'V̅MMMDCCXCIII',
+            
         ]
 
         decimal_numbers = [
@@ -86,7 +90,10 @@ class TestDecimalToRoman(unittest.TestCase):
             844,
             999,
             1888,
-            3467
+            3467,
+            4525,
+            5678,
+            8793
         ]
         # Test numbers in the list 
         for i in range(len(roman_numbers)):
