@@ -1,6 +1,6 @@
 def roman_to_decimal(roman):
     roman = roman.upper()
-    ro2de = {
+    ro2dec_dic = {
         'I' : 1,
         'V' : 5,
         'X' : 10,
@@ -13,8 +13,8 @@ def roman_to_decimal(roman):
     decimal = 0
     previous = 0
 
-    for char in roman:
-        value = ro2de[char]
+    for char in roman[::-1]:
+        value = ro2dec_dic[char]
         if value < previous:
             decimal -= value
         else:
