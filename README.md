@@ -10,7 +10,7 @@ Also if you want to test you can run the test_(name of the file).py (each functi
 For running any test, you can follow the example:
 
 ```bash
-python3 ./example/directory/test_example.py
+python3 ./example/directory/test_romans.py
 ```
 
 To download
