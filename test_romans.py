@@ -49,6 +49,15 @@ roman_numbers = [
     'MV̅DXXV',
     'V̅DCLXXVIII',
     'V̅MMMDCCXCIII', 
+    'MX̅CDXXII',
+    'X̅MV̅DCCLXIX',
+    'X̅L̅MV̅CXI',
+    'L̅X̅X̅MV̅XXII',
+    'X̅C̅MV̅DCCCLXXXVIII',
+    'C̅C̅X̅C̅V̅MMMDCCXCIII',
+    'D̅C̅C̅L̅X̅X̅MV̅XXII',
+    'M̅M̅C̅C̅X̅C̅V̅MMMDCCXCIII',
+    'M̅M̅M̅C̅M̅X̅C̅MX̅CMXCIX'
 ]
 
 decimal_numbers = [
@@ -89,7 +98,16 @@ decimal_numbers = [
     3467,
     4525,
     5678,
-    8793
+    8793,
+    9422,
+    14769,
+    44111,
+    74022,
+    94888,
+    298793,
+    774022,
+    2298793,
+    3999999
 ]
 
 #################
@@ -101,16 +119,16 @@ class TestRomanConverters(unittest.TestCase):
         print('Testing some numbers...\n')
         # Test numbers in the list 
         for i in range(len(roman_numbers)):
-            print(f'Test: in[{decimal_numbers[i]}] --> out[{roman_numbers[i]}]')
             resultado = decimal_to_roman(decimal_numbers[i])
+            print(f'Test: in[{decimal_numbers[i]}] --> spected_out[{roman_numbers[i]}] : real_out[{resultado}]')
             self.assertEqual(resultado, roman_numbers[i])
 
     def test_ro2de(self):
         print('\nTesting some romans... \n')
         # Test romans in the list 
         for i in range(len(roman_numbers)):
-            print(f'Test: in[{roman_numbers[i]}] --> out[{decimal_numbers[i]}]')
             resultado = roman_to_decimal(roman_numbers[i])
+            print(f'Test: in[{roman_numbers[i]}] --> spected_out[{decimal_numbers[i]}] : real_out[{resultado}]')
             self.assertEqual(resultado, decimal_numbers[i])
 
 ##################
