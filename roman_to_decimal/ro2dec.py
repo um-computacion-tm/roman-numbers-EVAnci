@@ -7,15 +7,15 @@ def roman_to_decimal(roman):
 
     if 'V̅' in roman:
         roman = roman.replace('V̅', 'U')
-    elif 'X̅' in roman:
+    if 'X̅' in roman:
         roman = roman.replace('X̅', 'K')
-    elif 'L̅' in roman:
+    if 'L̅' in roman:
         roman = roman.replace('L̅', 'J')
-    elif 'C̅' in roman:
+    if 'C̅' in roman:
         roman = roman.replace('C̅', 'H')
-    elif 'D̅' in roman:
+    if 'D̅' in roman:
         roman = roman.replace('D̅', 'G')
-    elif 'M̅' in roman:
+    if 'M̅' in roman:
         roman = roman.replace('M̅', 'T')
 
     roman = roman.upper()
