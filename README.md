@@ -46,7 +46,7 @@ For now, both converters don't work with numbers bigger than 3.999.999
 
 ## Resources
 
-The specials characters like this V̅, were taken from this [web] https://fsymbols.com/generators/lines/
+The specials characters like this V̅, were taken from this [web](https://fsymbols.com/generators/lines/)
 
 ## Contributors
 
