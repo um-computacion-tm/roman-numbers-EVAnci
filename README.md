@@ -42,7 +42,7 @@ from ro2dec import roman_to_decimal
 
 ## Known Issues
 
-For now, it don't work with numbers bigger than 3999, due to an ASCII limitation. Any ideas to replace the upper bar for representing the thousand (example: Five Thousand = V̅) is accepted.
+For now, both converters don't work with numbers bigger than 3.999.999
 
 ## Contributors
 
