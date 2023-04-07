@@ -39,12 +39,25 @@ def roman_to_decimal(roman):
     decimal = 0
     previous = 0
 
+    # How it works?
+    # first it inverts the string -> example: 'XLVI' -> 'IVLX'
+    # 'I' value is 1 -> save to value
+    # if value is bigger than previous then add it's value, if not substract it
+    # previous = 0, value = 1 -> decimal = 1, previous = 1
+    # Then again the same process
+    # previous = 1, value = 5 -> decimal = 6, previous = 5
+    # previous = 5, value = 50 -> decimal = 56, previous = 50
+    # previous = 50, value = 10 -> decimal = 46, previous = 10
+
     for char in roman[::-1]:
-        value = ro2dec_dic[char]
-        if value < previous:
-            decimal -= value
+        if char in ro2dec_dic: 
+            value = ro2dec_dic[char]
+            if value < previous:
+                decimal -= value
+            else:
+                decimal += value
+            previous = value
         else:
-            decimal += value
-        previous = value
+            return None
         
     return decimal
