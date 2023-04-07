@@ -5,7 +5,7 @@ There are two functions, roman to decimal and decimal to roman. Each function co
 ## Instalation
 
 There is no need to install, just download and use it in other programs. 
-Also if you want to test you can run the test_(name of the file).py (each function has a individual test).
+Also if you want to test you can run the test_romans.py.
 
 For running any test, you can follow the example:
 
@@ -32,12 +32,12 @@ Just import the function you need to your python program, or copy it into your p
 To import copy the following:
 
 ```python
-from dec2ro import decimal_to_roman
+from decimal_to_roman.dec2ro import decimal_to_roman
 ```
 or
 
 ```python
-from ro2dec import roman_to_decimal
+from roman_to_decimal.ro2dec import roman_to_decimal
 ```
 
 ## Known Issues
